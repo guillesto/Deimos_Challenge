@@ -54,6 +54,7 @@ def _returnLastMatriculaDatetime(matriculaStr):
     except Exception as exc:
         print(thisMPS, "**Warning! Error retrieving some matricula last datetime. Returning empty String. Exception:",
               str(exc))
+        return ""
 
 
 @app.route('/', methods=['GET'])
